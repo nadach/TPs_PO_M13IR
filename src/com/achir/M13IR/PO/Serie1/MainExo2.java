@@ -8,11 +8,11 @@ public class MainExo2 {
 
     public static void main(String... args) {
 
-        Marin marin1 = new Marin("Tabarly", "Eric", 1000) ;
-        Marin marin2 = new Marin("Artaud", "Florence", 1200) ;
-        Marin marin3 = new Marin("Lamazou", "Titouan", 800) ;
-        Marin marin4 = new Marin("Poupon", "Philippe", 1500) ;
-        Marin marin5 = new Marin("Colas", "Alain", 1100) ;
+        Marin marin1 = new Marin("Barbarossa", "Aruj", 1000) ;
+        Marin marin2 = new Marin("Barbarossa", "Khayr ad-Din ", 1200) ;
+        Marin marin3 = new Marin("Dansa", "Simon", 800) ;
+        Marin marin4 = new Marin("Salomo", "De Veenboer", 1500) ;
+        Marin marin5 = new Marin("Ward", "John", 1100) ;
 
         Marin[] marins = {marin1, marin2, marin3, marin4, marin5} ;
 
