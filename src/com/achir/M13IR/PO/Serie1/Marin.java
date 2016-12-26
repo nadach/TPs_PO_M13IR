@@ -26,6 +26,16 @@ public class Marin {
 
     /**
      *
+     * @param nom
+     * @param prenom
+     */
+    public Marin(String nom, String prenom) {
+        this.nom = nom;
+        this.prenom = prenom;
+    }
+
+    /**
+     *
      * @return
      */
     public String getNom() {
