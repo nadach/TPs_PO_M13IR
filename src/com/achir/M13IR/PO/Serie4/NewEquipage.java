@@ -1,27 +1,21 @@
 package com.achir.M13IR.PO.Serie4;
 
+import java.util.Set;
+import java.util.TreeSet;
+
 /**
  * Created by achir on 27/12/2016.
  */
 
-import com.achir.M13IR.PO.Serie1.Marin;
+public class NewEquipage {
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-
-/**
- * Created by achir on 18/11/2016.
- */
-public class Equipage {
-
-    private List<Marin> marins;
+    private Set<Marin> marins;
 
     /**
      *
      */
-    public Equipage () {
-        this.marins = new ArrayList<Marin>();
+    public NewEquipage () {
+        this.marins = new TreeSet<Marin>();
     }
 
     /**
@@ -71,7 +65,7 @@ public class Equipage {
      *
      * @return
      */
-    public List<Marin> getEquipage() {
+    public Set<Marin> getEquipage() {
         return marins;
     }
 
@@ -88,7 +82,7 @@ public class Equipage {
      * @param equipage
      * @return
      */
-    public boolean addAllEquipage(Equipage equipage) {
+    public boolean addAllEquipage(NewEquipage equipage) {
         return marins.addAll(equipage.getEquipage());
     }
 
@@ -102,31 +96,13 @@ public class Equipage {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Equipage)) return false;
-
-        Equipage equipage = (Equipage) o;
-
+        if (!(o instanceof NewEquipage)) return false;
+        NewEquipage equipage = (NewEquipage) o;
         return marins != null ? this.marins.containsAll(equipage.marins) : false;
     }
 
     @Override
     public int hashCode() {
-
-        // Add compare method to be able to compare to Marin objects
-        // and sort the marins list
-        marins.sort(new Comparator<Marin>() {
-            @Override
-            public int compare(Marin o1, Marin o2) {
-                if(o1.getNom().equals(o2.getNom())){
-                    return o1.getPrenom().compareTo(o2.getPrenom());
-                }
-                else{
-                    return o1.getNom().compareTo(o2.getNom());
-                }
-            }
-        });
-
-        // compute the hascode on sorted marins list
         return marins != null ? marins.hashCode() : 0;
     }
 
@@ -137,4 +113,3 @@ public class Equipage {
                 '}';
     }
 }
-
