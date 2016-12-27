@@ -6,7 +6,7 @@ package com.achir.M13IR.PO.Serie2;
 
 import com.achir.M13IR.PO.Serie1.Marin;
 
-public class Main {
+public class MainExo2 {
 
     public static void main(String[] args) {
         Equipage equipage = new Equipage();
