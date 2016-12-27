@@ -7,7 +7,7 @@ import com.achir.M13IR.PO.Serie3.util.Grade;
  */
 public class MainExo5 {
     public static void main(String[] args) {
-        EquipageCommande ec = new EquipageCommande(new Capitaine("sparow", "jack", Grade.CAPITAINE));
+        EquipageCommande ec = new EquipageCommande(new Capitaine("sparrow", "jack", Grade.CAPITAINE));
         BateauARames BR = new BateauARames("BR", 12, ec);
         System.out.println(BR);
         System.out.println(BR.getPropulsion());
