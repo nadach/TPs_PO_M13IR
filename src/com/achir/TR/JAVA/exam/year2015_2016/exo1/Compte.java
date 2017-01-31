@@ -58,7 +58,7 @@ public class Compte {
             return true;
         } else {
             System.out.println("Impossible de retirer "
-                    + Math.abs(somme) + ". Votre solde doit etre superieur � 100 Euros");
+                    + Math.abs(somme) + ". Votre solde doit etre superieur à 100 Euros");
             return false;
         }
 
