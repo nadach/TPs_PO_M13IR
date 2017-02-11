@@ -24,29 +24,23 @@ public class MarinUtil {
                 maxSalaire = marins[i].getSalaire() ;
             }
         }
-
         return maxSalaire ;
     }
 
     public int getMoyenneSalaire(Marin[] marins) {
-
         int sommeSalaire = 0 ;
         for (int i = 0 ; i < marins.length ; i++) {
             sommeSalaire += marins[i].getSalaire() ;
         }
-
         return sommeSalaire / marins.length ;
     }
 
     public int getMedianeSalaire(Marin[] marins) {
-
         int[] salaires = new int[marins.length] ;
         for (int i = 0 ; i < marins.length ; i++) {
             salaires[i] = marins[i].getSalaire() ;
         }
-
         Arrays.sort(salaires) ;
-
         return salaires[salaires.length / 2] ;
     }
 }
